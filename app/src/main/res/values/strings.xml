@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WebApp</string>
+
+
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="error_network">网络错误, 点击屏幕重试</string>
+</resources>

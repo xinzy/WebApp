@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget xmlns:tools="http://schemas.android.com/tools"
+    version="1.0.0" id="com.vip.vdo"
+    tools:keep="@xml/config">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+
+    <feature name="Notification">
+        <param name="android-package" value="com.xinzy.webapp.framework.cordo.plugin.NotificationPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Common">
+        <param name="android-package" value="com.xinzy.webapp.framework.cordo.plugin.CommonPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Vdo">
+        <param name="android-package" value="com.xinzy.webapp.framework.cordo.plugin.LinkProtocolPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="*" />
+    <name>WebApp</name>
+    <description>WebApp</description>
+    <author email="shaozengy@gmail.com" href="http://xinzyx.xyz">WebApp</author>
+    <content src="about:blank" />
+
+    <access origin="*" />
+    <content src="index.html" />
+
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="appUserAgent" value="vipshop" />
+    <preference name="android-minSdkVersion" value="17" />
+</widget>

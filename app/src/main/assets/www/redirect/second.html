@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="../css/css.css">
+        <title>跳转后的新页面</title>
+    </head>
+    <body style="background-color:#FFF">
+        <div>用户</div>
+        <button id="closeForResult">关闭并返回</button>
+        <script type="text/javascript" src="../cordova.js"></script>
+        <script type="text/javascript">
+            (function() {
+                document.getElementById('closeForResult').onclick = function() {
+                    cordova.exec(null, null, "Common", "closePageForResult", [{"success": "true"}]);
+                }
+            }) ();
+        </script>
+    </body>
+</html>

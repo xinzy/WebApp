@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        <title>重定向</title>
+    </head>
+    <body style="background-color:#FFF">
+        跳转页面。啦啦啦
+        <script type="text/javascript" src="js/second.js"></script>
+        <script type="text/javascript">
+            window.onload = function() {
+                setTimeout(redirect, 3000);
+            }
+            function redirect() {
+                window.location.replace('file:///android_asset/www/second.html');
+            }
+        </script>
+    </body>
+</html>
